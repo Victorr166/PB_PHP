@@ -18,6 +18,18 @@ switch ($route) {
         $produtoController->listarProdutos();
         break;
 
+    case "usuario/telaEditar":
+        $usuarioController->telaEditar();
+        break;
+
+    case "produto/atualizar":
+        $produtoController->atualizar();
+        break;
+
+    case "produto/excluir":
+        $produtoController->excluir();
+        break;
+
     default:
         echo "Página não encontrada";
         break;
