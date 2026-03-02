@@ -22,6 +22,9 @@
                     <a href="/PB_PHP/MVC_exemplo/usuario/telaEditar?id=<?= $id ?>">
                             editar
                     </a>
+                    <a href="/PB_PHP/MVC_exemplo/usuario/excluir?id=<?= $id ?>">
+                            excluir
+                    </a>
                 </td>
             </tr>
         <?php endforeach; ?>

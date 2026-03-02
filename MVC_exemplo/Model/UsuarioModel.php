@@ -30,9 +30,9 @@ class Usuario{
 
     public function atualizar($id){
         if(isset($_SESSION['usuarios'][$id])){
-            $_SESSION['usuarios'][$id] - [
-                'nome' -> $this->nome,
-                'email' -> $this->email
+            $_SESSION['usuarios'][$id] = [
+                'nome' => $this->nome,
+                'email' => $this->email
             ];
         }
     }
@@ -41,6 +41,12 @@ class Usuario{
         $usuario - Usuario::buscar($_GET['id']);
         require 'View/usuarioEditar.php';
     }
+
+    public static function excluir($id){
+        if(isset($_SESSION['usuarios'][$id])){  // verifica se o usuario existe
+            unset($_SESSION['usuarios'][$id]); // remove o usuario
+            
+        }
+    }
 }
 
-?>
