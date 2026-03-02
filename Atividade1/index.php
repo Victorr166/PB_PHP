@@ -18,8 +18,8 @@ switch ($route) {
         $produtoController->listarProdutos();
         break;
 
-    case "usuario/telaEditar":
-        $usuarioController->telaEditar();
+    case "produto/telaEditar":
+        $produtoController->telaEditar();
         break;
 
     case "produto/atualizar":

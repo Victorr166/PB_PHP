@@ -29,14 +29,14 @@ class ProdutoController{
     }
 
     public function telaEditar(){
-        $usuario = Produto::buscar($_GET['id']);
+        $produto = Produto::buscar($_GET['id']);
         require 'View/produtoEditar.php';
     }
 
     public function atualizar(){
         $produto = new Produto($_POST['nome'], $_POST['valor'], $_POST['quantidade'], $_POST['validade']);
         $produto->atualizar($_GET['id']);
-        header('Location: /PB_PHP/Atvidade1/produto/telaEditar?id='.($_GET['id']));
+        header('Location: /PB_PHP/Atividade1/produto/telaEditar?id='.($_GET['id']));
         exit;
     }
 

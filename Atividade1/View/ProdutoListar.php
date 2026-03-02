@@ -7,7 +7,7 @@
 </head>
 <body>
     <h2>Produtos</h2>
-    <a href="/PBE/Atividade1/produto/telaCadastro">voltar</a>
+    <a href="/PB_PHP/Atividade1/produto/telaCadastro">voltar</a>
     <table border="1">
         <tr>
             <th>Nome</th>
